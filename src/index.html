@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="styles/main.css">
-    <script rel="script" href="scripts/main.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-2mX2PSpkRSXLQzmNzH3gwK6srb06+OfbDlYjbog8LQuALYJjuQ3+Yzy2JIWNV9rW" crossorigin="anonymous">
+    <link href="styles/main.css" rel="stylesheet" type="text/css" media="all">
+    <title>Morning Mad Libs</title>
   </head>
   <body>
-    <h1></h1>
+    <div class="container">
+      <div id="questions">
+        <h1>Let's play some mad-libs!</h1>
+        <hr>
+        <form role="form">
+          <div class="form-group">
+            <label for="person">Boy's Name</label>
+            <input id="person" class="form-control person" type="text" placeholder="Enter a boy's name .." autofocus>
+          </div>
+          <div class="form-group">
+            <label for="adjective">Adjective</label>
+            <input id="adjective" class="form-control adjective" type="text" placeholder="Enter an adjective ..">
+          </div>
+          <div class="form-group">
+            <label for="noun">Plural noun</label>
+            <input id="noun" class="form-control noun1" type="text" placeholder="Enter a plural noun ..">
+          </div>
+          <div class="form-group">
+            <label for="animal">animal, plural</label>
+            <input id="animal" class="form-control animal" type="text" placeholder="Enter an animal, plural ..">
+          </div>
+          <div class="form-group">
+            <label for="food">Food</label>
+            <input id="food" class="form-control food" type="text" placeholder="Enter a food ..">
+          </div>
+          <div class="form-group">
+            <label for="noun2">Plural noun</label>
+            <input id="noun2" class="form-control noun2" type="text" placeholder="Enter a plural noun ..">
+          </div>
+          <div class="form-group">
+            <label for="noun3">Plural noun</label>
+            <input id="noun3" class="form-control noun3" type="text" placeholder="Enter a plural noun ..">
+          </div>
+          <div class="form-group">
+            <label for="verb">A verb ending in "s"</label>
+            <input id="verb" class="form-control verb" type="text" placeholder='Enter a verb ending in "s" ..'>
+          </div>
+          <div>
+          </div>
+        </form>
+        <button id="btn-click" type="submit" class="btn btn-primary btn-lg">Generate!</button>
+        <hr>
+      </div>
+      <div id="story">
+        <h1>Mad with the Libs</h1>
+        <hr>
+        <h3>I'm in love with <span class="person"></span>. He's so <span class="adjective"></span>! He has big flat <span class="noun"></span>, and when our <span class="animal"></span> meet, I get <span class="noun2"></span> in my stomach. I've fallen for him like a ton of <span class="noun3"></span>, and he <span class="verb"></span> for me, too. But I think he's got another <span class="food"></span>. What should I do?</h3>
+        <div>
+          <button type="submit" class="btn btn-primary btn-lg" id="play-btn">Play Again?</button>
+        </div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
